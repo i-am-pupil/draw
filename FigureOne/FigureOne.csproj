@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\draw\draw.csproj">
+    <ProjectReference Include="..\draw\Draw.csproj">
       <Project>{106d6749-e8a6-4d7f-8f55-ebfb985fd39c}</Project>
-      <Name>draw</Name>
+      <Name>Draw</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

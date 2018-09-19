@@ -1,5 +1,5 @@
 ﻿using System;
-namespace draw
+namespace Draw
 {
     public class Figure : IFigureOne, IFigureTwo
     {

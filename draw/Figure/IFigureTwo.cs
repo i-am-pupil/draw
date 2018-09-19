@@ -1,4 +1,4 @@
-﻿namespace draw
+﻿namespace Draw
 {
     public interface IFigureTwo
     {

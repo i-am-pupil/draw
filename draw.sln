@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "draw", "draw\draw.csproj", "{106D6749-E8A6-4D7F-8F55-EBFB985FD39C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draw", "draw\Draw.csproj", "{106D6749-E8A6-4D7F-8F55-EBFB985FD39C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureTwo", "FigureTwo\FigureTwo.csproj", "{F3CADCBE-7D0E-4F1B-B2C8-4876EE0B3080}"
 EndProject
