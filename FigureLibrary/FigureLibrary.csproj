@@ -46,6 +46,7 @@
     <Compile Include="Concrete\Circle.cs" />
     <Compile Include="Concrete\Rectangle.cs" />
     <Compile Include="Generator\FigureGenerator.cs" />
+    <Compile Include="IFigure\IFigure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

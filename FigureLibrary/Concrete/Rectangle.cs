@@ -21,7 +21,10 @@ namespace FigureLibrary.Concrete
             UpperLeftCorner = upperLeftCorner;
             BottomRightCorner = bottomRightCorner;
         }
-
+        public override object GetFigure()
+        {
+            return this.MemberwiseClone();
+        }
         public override double Area => Width * Height;
         public override double Width => BottomRightCorner.X - UpperLeftCorner.X;
         public override double Height => BottomRightCorner.Y - UpperLeftCorner.Y;

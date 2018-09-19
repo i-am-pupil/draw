@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 using FigureLibrary.Abstract;
 using FigureLibrary.Common;
 using FigureLibrary.Concrete;
+using FigureLibrary.IFigure;
 
 namespace FigureLibrary.Generator
 {
     public static class FigureGenerator
     {
-        public static IEnumerable<AbstractFigure> TestFigures
+        public static IEnumerable<IFigure.IFigure> TestFigures
         {
             get
             {

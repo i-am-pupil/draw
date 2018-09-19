@@ -11,13 +11,11 @@ namespace FigureWinFormsRenderer
     {
         static void Main(string[] args)
         {
-            var renderer = new WinFormsRenderer();
             var figures = FigureGenerator.TestFigures.ToList();
-
+            var draw = new Draw();
             foreach (var figure in figures)
             {
-                // draw the figures!
-                renderer.Line(0d, 0d, 1d, 1d);
+                draw.Drawing(figure);
             }
 
         }

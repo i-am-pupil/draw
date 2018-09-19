@@ -20,7 +20,10 @@ namespace FigureLibrary.Concrete
             Center = center;
             Radius = radius;
         }
-
+        public override object GetFigure()
+        {
+            return this.MemberwiseClone();
+        }
         public override double Area => Math.PI * Radius * Radius;
         public override double Width => Radius * 2d;
         public override double Height => Radius * 2d;
