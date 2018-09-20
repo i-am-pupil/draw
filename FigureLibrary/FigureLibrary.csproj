@@ -42,11 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\AbstractFigure.cs" />
+    <Compile Include="Abstract\IRenderer.cs" />
     <Compile Include="Common\Point.cs" />
     <Compile Include="Concrete\Circle.cs" />
     <Compile Include="Concrete\Rectangle.cs" />
-    <Compile Include="Container\Figure.cs" />
-    <Compile Include="Container\IFigure.cs" />
     <Compile Include="Generator\FigureGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

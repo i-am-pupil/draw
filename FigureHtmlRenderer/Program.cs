@@ -1,24 +1,26 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-//using FigureLibrary.Generator;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using FigureLibrary.Generator;
 
-//namespace FigureHtmlRenderer
-//{
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            var renderer = new HtmlRenderer();
-//            var figures = FigureGenerator.TestFigure.ToList();
+namespace FigureHtmlRenderer
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var htmlRenderer = new HtmlRenderer();
+            var renderer = new FigureHtmlRenderer(htmlRenderer);
 
-//            foreach (var figure in figures)
-//            {
-//                // draw the figures!
-//                renderer.DrawLine(0d, 0d, 1d, 1d);
-//            }
-//        }
-//    }
-//}
+            var figures = FigureGenerator.TestFigures.ToList();
+
+            foreach (var figure in figures)
+            {
+                // renderer.Render((dynamic)figure); // неправильно!
+                figure.Render(renderer);
+            }
+        }
+    }
+}

@@ -21,8 +21,13 @@ namespace FigureLibrary.Concrete
             Debug.Assert(bottomRightCorner.X > upperLeftCorner.X);
             UpperLeftCorner = upperLeftCorner;
             BottomRightCorner = bottomRightCorner;
-
         }
+
+        public override void Render(IRenderer renderer)
+        {
+            renderer.Render(this);
+        }
+
         public override double Area => Width * Height;
         public override double Width => BottomRightCorner.X - UpperLeftCorner.X;
         public override double Height => BottomRightCorner.Y - UpperLeftCorner.Y;

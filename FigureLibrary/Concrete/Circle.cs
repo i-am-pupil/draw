@@ -19,6 +19,12 @@ namespace FigureLibrary.Concrete
             Center = center;
             Radius = radius;
         }
+
+        public override void Render(IRenderer renderer)
+        {
+            renderer.Render(this);
+        }
+
         public override double Area => Math.PI * Radius * Radius;
         public override double Width => Radius * 2d;
         public override double Height => Radius * 2d;
