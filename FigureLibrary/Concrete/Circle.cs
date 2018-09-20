@@ -13,16 +13,11 @@ namespace FigureLibrary.Concrete
     {
         public Point Center { get; }
         public double Radius { get; }
-
         public Circle(Point center, double radius)
         {
             Debug.Assert(radius > 0d);
             Center = center;
             Radius = radius;
-        }
-        public override object GetFigure()
-        {
-            return this.MemberwiseClone();
         }
         public override double Area => Math.PI * Radius * Radius;
         public override double Width => Radius * 2d;

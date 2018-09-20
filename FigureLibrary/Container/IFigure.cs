@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FigureLibrary.IFigure
+namespace FigureLibrary.Container
 {
-    public interface IFigure
+    public interface IFigure<out T>
     {
-        object GetFigure();
+        T GetFigure { get; }
     }
 }

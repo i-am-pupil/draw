@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 using FigureLibrary.Abstract;
 using FigureLibrary.Common;
 
+
 namespace FigureLibrary.Concrete
 {
-    public class Rectangle : AbstractFigure
+    public class Rectangle:AbstractFigure
     {
         public Point UpperLeftCorner { get; }
         public Point BottomRightCorner { get; }
@@ -20,10 +21,7 @@ namespace FigureLibrary.Concrete
             Debug.Assert(bottomRightCorner.X > upperLeftCorner.X);
             UpperLeftCorner = upperLeftCorner;
             BottomRightCorner = bottomRightCorner;
-        }
-        public override object GetFigure()
-        {
-            return this.MemberwiseClone();
+
         }
         public override double Area => Width * Height;
         public override double Width => BottomRightCorner.X - UpperLeftCorner.X;
